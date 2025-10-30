@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(144, 7, 179);
+  
+}
+
+header .logo {
+    display: flex;
+    padding-left: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+header p {
+    font-weight: 500;
+    font-size: larger;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    color: aliceblue;
+
+}
+
+main {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: space-between;
+    gap: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+     width: 100%;
+    border-bottom: 2px solid rgb(144, 7, 179);
+
+}
+
+ main .intro {
+   width: 500px;
+   
+}
+
+.intro h2 {
+    color:rgb(144, 7, 179);
+}
+
+main .foto {
+    height: 350px;
+    width: 350px;
+    border-radius: 180px;
+    border: 5px solid rgb(144, 7, 179);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    gap: 20px;
+   
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    border-bottom: 2px solid rgb(144, 7, 179);
+    width: 100%;
+}
+
+.skills h2 {
+    color: aliceblue;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 10px 5px 10px rgb(144, 7, 179); 
+    gap: 20px;
+    /*box-shadow: 60px -16px teal; */
+}
+
+.skills .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+
+.contacts {
+    
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    outline: none;
+    color: aliceblue;
+}
+
+footer .social {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .linkedin {
+    height: 60px;
+    width: 60px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+/*
+background-color: rgb(144, 7, 179);
+}*/
