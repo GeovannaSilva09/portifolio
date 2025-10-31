@@ -9,8 +9,11 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(19, 19, 31);
 }
+
+
+/* background-color: rgb(46, 0, 58); */
 
 header {
     display: flex;
@@ -18,9 +21,11 @@ header {
     justify-content: space-between;
     height: 100px;
     width: 100%;
-    background-color: rgb(144, 7, 179);
+    background-color: rgb(0, 0, 0);
   
 }
+
+/* background-color: rgb(83, 8, 102);*/
 
 header .logo {
     display: flex;
@@ -56,7 +61,7 @@ main {
     padding-left: 200px;
     padding-right: 200px;
      width: 100%;
-    border-bottom: 2px solid rgb(144, 7, 179);
+    /* border-bottom: 2px solid rgb(144, 7, 179); */
 
 }
 
@@ -69,12 +74,15 @@ main {
     color:rgb(144, 7, 179);
 }
 
+/*Cor que eu mais gostei  color:rgb(144, 7, 179);*/
+
 main .foto {
     height: 350px;
-    width: 350px;
+    width: 360px;
     border-radius: 180px;
-    border: 5px solid rgb(144, 7, 179);
+    border: 13px solid rgb(113, 8, 139);
 }
+
 
 .description {
     display: flex;
@@ -85,73 +93,247 @@ main .foto {
    
 }
 
+.descricao p {
+    height: 100px;
+    width: 600px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+
 .skills {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 25px;
     padding: 40px;
-    border-bottom: 2px solid rgb(144, 7, 179);
     width: 100%;
 }
 
-.skills h2 {
-    color: aliceblue;
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .habilidades {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 150px;
-    height: 150px;
-    background-color: aliceblue;
-    border-radius: 5px;
-    box-shadow: 10px 5px 10px rgb(144, 7, 179); 
-    gap: 20px;
-    /*box-shadow: 60px -16px teal; */
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 200px;
+    background-color: rgb(209, 186, 218);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(144, 7, 179, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
 }
 
-.skills .icone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  height: 100px;
-  width: 100px;
+.habilidades:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(144, 7, 179, 0.9);
+}
+
+.icone {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+}
+
+.habilidades h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(144, 7, 179);
+    margin-bottom: 4px;
+}
+
+.icone {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
 }
 
 
-.contacts {
-    
+.habilidades p {
+    font-size: 13px;
+    color: black;
+    font-size: large;
 }
 
-footer {
-    height: 100px;
-    width: 100%;
+/*  Cinza  color: rgb(70, 70, 70); */
+
+/* Animação de entrada (fade + zoom) */
+.habilidades {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
-footer a {
-    text-decoration: none;
-    outline: none;
+.habilidades.show {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+.icone {
+    width: 80px;
+    height: 80px;
+}
+
+
+.skills h2 {
     color: aliceblue;
 }
 
-footer .social {
-    height: 50px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-
+.work {
+    color: aliceblue;
 }
 
-footer .linkedin {
-    height: 60px;
-    width: 60px;
-    background-color: aliceblue;
-    border-radius: 10px;
+.cursos h3 {
+   gap: 20px;
+}
+
+.cards-projetos {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: flex-start; /* alinha pelo topo */
+    gap: 22px;
+    flex-wrap: wrap; /* permite quebrar linha em telas menores */
+    width: 100%;
+    padding-top: 20px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px; /* largura fixa, responsiva se necessário */
+    min-height: 200px;
+    background-color: rgb(209, 186, 218);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(144, 7, 179, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+}
+
+.projetos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(144, 7, 179, 0.9);
+}
+
+.projetos h4 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 8px;
+}
+
+.projetos .details {
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+    margin-bottom: 12px;
+}
+
+.projetos .links a {
+    text-decoration: none;
+    color: rgb(144, 7, 179);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projetos .links a:hover {
+    color: rgb(195, 150, 206);
+}
+
+ .projetos h2 {
+    color: aliceblue;
+}
+ 
+
+
+
+
+
+
+footer {
+    width: 100%; 
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.contacts h2 {
+    color: aliceblue;
+}
+
+.contacts ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    color: rgb(195, 150, 206);
+    transform: scale(1.05);
+}
+
+.social {
+    width: 35px;
+    height: 35px;
+}
+
+.icon-box {
+    background-color: rgb(144, 7, 179);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: rgb(195, 150, 206);
 }
 
 /*
 background-color: rgb(144, 7, 179);
 }*/
+
+
+
+/*Responsividade*/
+
+

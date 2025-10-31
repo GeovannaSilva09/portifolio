@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
     <title>Portifólio</title>
 </head>
 
@@ -18,8 +19,7 @@
         <section class="presentation">
             <div class="intro">
                 <h1>Olá, Sou Geovanna Silva!</h1>
-                <h2>Desenvolvedora Júnior
-                    com foco em Backend.</h2>
+                <h2 id="typing-text"></h2>
             </div>
 
             <img class="foto" src="./img/foto.jpeg" alt="foto">
@@ -30,60 +30,141 @@
             <h2> Sobre Mim</h2>
 
             <div class="descricao">
-                <p>Estudante de programação, atualmente cursando o 2 semestre de desenvolvimento de sistemas no Senai
+                <p>
+                    Estudante de programação, atualmente cursando Desenvolvimento de Sistemas no Senai no 2º semestre.
+                    Já desenvolvi projetos utilizando Node.js, APIs RESTful, Swagger, Prisma e bancos de dados
+                    SQL/MySQL, prezo por escrever um código limpo,
+                    seguro e bem estruturado, aplicando boas práticas de arquitetura e padrões de projeto, busco
+                    constantemente evoluir minhas habilidades e entregar soluções com qualidade.
+
                 </p>
             </div>
         </section>
 
+
         <section class="skills">
-            <h2>habilidades</h2>
+            <h2>Habilidades</h2>
 
-            <div class="habilidades">
-                <img class="icone" src="./img/nodejs.png" alt="node.js">
-            </div>
-            <div class="habilidades">
-                <img class="icone" src="./img/sql.png" alt="sql">
-            </div>
-            <div class="habilidades">
-                <img class="icone" src="./img/swagger.png" alt="swagger">
-            </div>
-            <div class="habilidades">
-                <img class="icone" src="./img/render.png" alt="render">
-            </div>
-            <div class="habilidades">
-                <img class="icone" src="./img/git.webp" alt="git">
-            </div>
+            <div class="cards-container">
+                <div class="habilidades">
+                    <img class="icone" src="./img/nodejs.png" alt="node.js">
+                    <p>Desenvolvimento de aplicações servidor</p>
+                </div>
 
-            <div class="habilidades">
-                <img class="icone" src="./img/js.png" alt="javaScript">
+                <div class="habilidades">
+                    <img class="icone" src="./img/sql.png" alt="sql">
+                    <p>Criação e gerenciamento de estruturas de dados</p>
+                </div>
+
+                <div class="habilidades">
+                    <img class="icone" src="./img/swagger.png" alt="swagger">
+                    <p>Documentação de API e projetos</p>
+                </div>
+
+                <div class="habilidades">
+                    <img class="icone" src="./img/render.png" alt="render">
+                    <p>Publicação e gerenciamento de aplicações em ambiente online</p>
+                </div>
+
+                <div class="habilidades">
+                    <img class="icone" src="./img/git.webp" alt="git">
+                    <p>Controle de versões e colaboração em projetos</p>
+                </div>
+
+                <div class="habilidades">
+                    <img class="icone" src="./img/js.png" alt="JavaScript">
+                    <p>Lógica de Programação</p>
+                </div>
             </div>
         </section>
+
+
+
+        <section class="projects">
+            <h2>Projetos</h2>
+
+            <div class="cards-projetos">
+                <article class="projetos">
+                    <h4>CRUD Locadora: Sistema de Gerenciamento</h4>
+                    <p class="details">Sistema para gerenciar dados de filmes com CRUD de fichas técnicas.</p>
+                    <div class="links">
+                        <a href="#">Ver detalhes</a>
+                    </div>
+                </article>
+
+                <article class="projetos">
+                    <h4>Whatsapp</h4>
+                    <p class="details">Exercício manipulando arquivos JSON estilo Whatsapp.</p>
+                    <div class="links">
+                        <a href="#">Ver detalhes</a>
+                    </div>
+                </article>
+
+                <article class="projetos">
+                    <h4>Json estados</h4>
+                    <p class="details">Atividade manipulando JSON sobre estados e cidades</p>
+                    <div class="links">
+                        <a href="#">Ver detalhes</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        </section>
+
+        <section class="work">
+            <h2>Experiência Profissional e Formação</h2>
+
+            <div class="cursos">
+                <h3>Cursos</h3>
+
+                <ul>
+                    <li>Curso Técnico de Desenvolvimento de Sistemas - SENAI (conclusão: 2026) </li>
+                </ul>
+
+            </div>
+        </section>
+
+
 
     </main>
     <footer>
-        <section class="contacts">
-            <h3>contatos</h3>
-            <div class="contatos">
+        <footer>
+            <section class="contacts">
+                <h2>Contatos</h2>
+
                 <ul>
                     <li>
-                        <div class="linkedin">
-                            <img class="social" src="./img/linkedin.png" alt="linkedin">
-                        </div>
-                        <a href="#">Linkedin</a>
+                        <a href="#" class="contact-item">
+                            <div class="icon-box">
+                                <img class="social" src="./img/linkedin.png" alt="linkedin">
+                            </div>
+                            Linkedin
+                        </a>
                     </li>
 
                     <li>
-                        <img class="social" src="./img/email.png" alt="email">
-                        <a href="#">vannasousa28@gmail.com</a>
+                        <a class="contact-item" href="mailto:vannasousa28@gmail.com">
+                            <img class="social" src="./img/email.png" alt="email">
+                            vannasousa28@gmail.com
+                        </a>
                     </li>
 
                     <li>
-                        <img class="social" src="./img/github.png" alt="github">
-                        <a href="#">Github</a>
+                        <a class="contact-item" href="https://github.com/">
+                            <img class="social" src="./img/github.png" alt="github">
+                            Github
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
+
+            <p class="copyright">
+                &copy; 2025 Desenvolvido por Geovanna Silva de Sousa
+            </p>
+        </footer>
+
     </footer>
 </body>
 
