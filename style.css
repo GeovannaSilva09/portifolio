@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     width: 100vw;
     height: 100vh;
@@ -13,33 +11,6 @@ body {
 }
 
 
-/* Espaço entre as seções principais */
-.presentation {
-    padding: 80px 200px; /* mais espaço vertical */
-}
-
-.description {
-    padding: 80px 0; /* aumenta o espaço acima e abaixo da seção */
-}
-
-.skills {
-    padding: 80px 0; 
-}
-
-.projects {
-    padding: 80px 0;
-}
-
-.work {
-    padding: 80px 0;
-}
-
-footer {
-    padding: 60px 0; 
-}
-
-
-/* background-color: rgb(46, 0, 58); */
 
 header {
     display: flex;
@@ -48,10 +19,7 @@ header {
     height: 100px;
     width: 100%;
     background-color: rgb(0, 0, 0);
-  
 }
-
-/* background-color: rgb(83, 8, 102);*/
 
 header .logo {
     display: flex;
@@ -68,7 +36,6 @@ header p {
     align-items: center;
     justify-content: baseline;
     color: aliceblue;
-
 }
 
 main {
@@ -83,24 +50,18 @@ main {
     align-items: center;
     color: aliceblue;
     justify-content: space-between;
-    gap: 40px;
     padding-left: 200px;
     padding-right: 200px;
-     width: 100%;
-    /* border-bottom: 2px solid rgb(144, 7, 179); */
-
+    width: 100%;
 }
 
- main .intro {
+main .intro {
    width: 500px;
-   
 }
 
 .intro h2 {
-    color:rgb(144, 7, 179);
+    color: rgb(144, 7, 179);
 }
-
-/*Cor que eu mais gostei  color:rgb(144, 7, 179);*/
 
 main .foto {
     height: 350px;
@@ -109,26 +70,28 @@ main .foto {
     border: 13px solid rgb(113, 8, 139);
 }
 
-
 .description {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    text-align: center; 
     color: aliceblue;
     gap: 20px;
-   
 }
 
 .descricao p {
-    height: 100px;
-    width: 600px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 800px; /* limita largura */
     color: aliceblue;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
+
+
+.description h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
 
 .skills {
     display: flex;
@@ -170,34 +133,24 @@ main .foto {
 }
 
 .icone {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 8px;
 }
 
 .habilidades h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: rgb(144, 7, 179);
     margin-bottom: 4px;
 }
 
-.icone {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 8px;
-}
-
-
 .habilidades p {
-    font-size: 13px;
+    font-size: 17px;
     color: black;
-    font-size: large;
+    font-weight: 500;
 }
 
-/*  Cinza  color: rgb(70, 70, 70); */
-
-/* Animação de entrada (fade + zoom) */
 .habilidades {
     opacity: 0;
     transform: scale(0.8);
@@ -209,14 +162,6 @@ main .foto {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-
-
-.icone {
-    width: 80px;
-    height: 80px;
-}
-
-
 .skills h2 {
     color: aliceblue;
 }
@@ -225,14 +170,12 @@ main .foto {
     color: aliceblue;
 }
 
-
-
 .cards-projetos {
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: flex-start; /* alinha pelo topo */
+    justify-content: center;
+    align-items: flex-start;
     gap: 22px;
-    flex-wrap: wrap; /* permite quebrar linha em telas menores */
+    flex-wrap: wrap;
     width: 100%;
     padding-top: 20px;
 }
@@ -242,7 +185,7 @@ main .foto {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 350px; /* largura fixa, responsiva se necessário */
+    width: 350px;
     min-height: 200px;
     background-color: rgb(209, 186, 218);
     border-radius: 12px;
@@ -261,14 +204,12 @@ main .foto {
     color: aliceblue;
     width: 500px;
     padding-left: 550px;
- }
-
+}
 
 .projetos:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(144, 7, 179, 0.9);
 }
-
 
 .projetos h4 {
     font-size: 18px;
@@ -293,7 +234,6 @@ main .foto {
     color: rgb(195, 150, 206);
 }
 
-
 .work {
     display: flex;
     flex-direction: column;
@@ -301,7 +241,7 @@ main .foto {
     gap: 30px;
     padding: 50px 20px;
     width: 100%;
-    background-color: rgb(25, 25, 40); /* leve contraste com o fundo */
+    background-color: rgb(25, 25, 40);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(144, 7, 179, 0.3);
     opacity: 0;
@@ -349,24 +289,8 @@ main .foto {
     color: rgb(30, 30, 30);
 }
 
-@media (max-width: 768px) {
-    .work h2 {
-        font-size: 24px;
-    }
-
-    .cursos h3 {
-        font-size: 20px;
-    }
-
-    .cursos li {
-        font-size: 16px;
-    }
-}
-
-
-
 footer {
-    width: 100%; 
+    width: 100%;
     height: 200px;
     background-color: rgb(0, 0, 0);
     padding: 30px 0;
@@ -374,10 +298,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-
-     /* Animação inicial */
     opacity: 0;
-    transform: translateX(-100px); /* vem da esquerda */
+    transform: translateX(-100px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -443,20 +365,32 @@ footer .copyright {
 }
 
 
+/* Espaço entre as seções principais */
+.presentation {
+    padding: 80px 200px;
+}
+
+.description {
+    padding: 80px 0;
+}
+
+.skills {
+    padding: 80px 0;
+}
+
+.projects {
+    padding: 80px 0;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+footer {
+    padding: 60px 0;
+}
 
 
-
-/*
-background-color: rgb(144, 7, 179);
-}*/
-
-
-
-/*Responsividade*/
-
-
-
-/* Tablets e telas médias */
 @media (max-width: 1024px) {
     .descricao p {
         width: 90%;
@@ -501,7 +435,6 @@ background-color: rgb(144, 7, 179);
     }
 }
 
-/* Celulares e telas pequenas */
 @media (max-width: 768px) {
     .presentation {
         flex-direction: column;
@@ -555,7 +488,6 @@ background-color: rgb(144, 7, 179);
     }
 }
 
-/* Telas muito pequenas */
 @media (max-width: 480px) {
     header p {
         font-size: 16px;

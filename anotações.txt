@@ -1,0 +1,13 @@
+
+display block:
+
+A propriedade CSS display: block serve para fazer um elemento ocupar toda a largura disponível em sua linha, 
+criando uma quebra de linha antes e depois de si. Isso faz com que ele se comporte como um bloco sólido 
+e força outros elementos a ficarem em linhas separadas. 
+
+
+
+A lógica Mobile First prioriza o design para dispositivos móveis e depois adapta para telas maiores,
+ focando em conteúdo essencial. Já a lógica Desktop First parte do design para computadores (telas maiores)
+e faz adaptações para reduzir a complexidade e acomodar telas menores. 
+
