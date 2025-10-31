@@ -13,6 +13,32 @@ body {
 }
 
 
+/* Espaço entre as seções principais */
+.presentation {
+    padding: 80px 200px; /* mais espaço vertical */
+}
+
+.description {
+    padding: 80px 0; /* aumenta o espaço acima e abaixo da seção */
+}
+
+.skills {
+    padding: 80px 0; 
+}
+
+.projects {
+    padding: 80px 0;
+}
+
+.work {
+    padding: 80px 0;
+}
+
+footer {
+    padding: 60px 0; 
+}
+
+
 /* background-color: rgb(46, 0, 58); */
 
 header {
@@ -57,7 +83,7 @@ main {
     align-items: center;
     color: aliceblue;
     justify-content: space-between;
-    gap: 80px;
+    gap: 40px;
     padding-left: 200px;
     padding-right: 200px;
      width: 100%;
@@ -199,9 +225,7 @@ main .foto {
     color: aliceblue;
 }
 
-.cursos h3 {
-   gap: 20px;
-}
+
 
 .cards-projetos {
     display: flex;
@@ -229,10 +253,22 @@ main .foto {
     text-align: center;
 }
 
+.projects h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 500px;
+    padding-left: 550px;
+ }
+
+
 .projetos:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(144, 7, 179, 0.9);
 }
+
 
 .projetos h4 {
     font-size: 18px;
@@ -257,13 +293,75 @@ main .foto {
     color: rgb(195, 150, 206);
 }
 
- .projetos h2 {
-    color: aliceblue;
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+    width: 100%;
+    background-color: rgb(25, 25, 40); /* leve contraste com o fundo */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(144, 7, 179, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
- 
 
+.work.show-work {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.work h2 {
+    font-size: 28px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
 
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: rgb(209, 186, 218);
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(144, 7, 179, 0.4);
+}
+
+.cursos h3 {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.cursos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.cursos li {
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+}
+
+@media (max-width: 768px) {
+    .work h2 {
+        font-size: 24px;
+    }
+
+    .cursos h3 {
+        font-size: 20px;
+    }
+
+    .cursos li {
+        font-size: 16px;
+    }
+}
 
 
 
@@ -276,6 +374,22 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 25px;
+
+     /* Animação inicial */
+    opacity: 0;
+    transform: translateX(-100px); /* vem da esquerda */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+footer.show-footer {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+footer .contacts h2,
+footer .contacts ul,
+footer .copyright {
+    color: aliceblue;
 }
 
 .contacts {
@@ -328,6 +442,10 @@ footer {
     color: rgb(195, 150, 206);
 }
 
+
+
+
+
 /*
 background-color: rgb(144, 7, 179);
 }*/
@@ -337,3 +455,153 @@ background-color: rgb(144, 7, 179);
 /*Responsividade*/
 
 
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .descricao p {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .habilidades {
+        width: 160px;
+        height: 200px;
+        padding: 12px;
+    }
+
+    .habilidades h3 {
+        font-size: 18px;
+    }
+
+    .habilidades p {
+        font-size: 14px;
+    }
+
+    .icone {
+        width: 80px;
+        height: 80px;
+    }
+
+    .projetos {
+        width: 350px;
+        min-height: 220px;
+        padding: 15px;
+    }
+
+    .projetos h4 {
+        font-size: 20px;
+    }
+
+    .projetos .details {
+        font-size: 16px;
+    }
+
+    .projetos .links a {
+        font-size: 16px;
+    }
+}
+
+/* Celulares e telas pequenas */
+@media (max-width: 768px) {
+    .presentation {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .descricao p {
+        font-size: 16px;
+    }
+
+    .habilidades {
+        width: 140px;
+        height: 180px;
+        padding: 10px;
+    }
+
+    .habilidades h3 {
+        font-size: 16px;
+    }
+
+    .habilidades p {
+        font-size: 13px;
+    }
+
+    .icone {
+        width: 70px;
+        height: 70px;
+    }
+
+    .projetos {
+        width: 90%;
+        min-height: 200px;
+        padding: 10px;
+    }
+
+    .projetos h4 {
+        font-size: 18px;
+    }
+
+    .projetos .details {
+        font-size: 14px;
+    }
+
+    .projetos .links a {
+        font-size: 14px;
+    }
+
+    .cards-container, .cards-projetos {
+        gap: 15px;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 480px) {
+    header p {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .descricao p {
+        font-size: 14px;
+    }
+
+    .habilidades {
+        width: 120px;
+        height: 160px;
+    }
+
+    .habilidades h3 {
+        font-size: 14px;
+    }
+
+    .habilidades p {
+        font-size: 12px;
+    }
+
+    .icone {
+        width: 60px;
+        height: 60px;
+    }
+
+    .projetos {
+        width: 95%;
+        min-height: 180px;
+    }
+
+    .projetos h4 {
+        font-size: 16px;
+    }
+
+    .projetos .details {
+        font-size: 12px;
+    }
+
+    .projetos .links a {
+        font-size: 12px;
+    }
+
+    .cards-container, .cards-projetos {
+        gap: 10px;
+    }
+}
